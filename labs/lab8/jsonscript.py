@@ -8,7 +8,7 @@ five = data[:5]
 for each in five:
 # pulling out the following fields: name, html_url, updated_at, and visibility
     with open("chacon.csv","a") as file:
-        csl = each['name'] +  ',' + each['html_url'] + ',' + each['updated_at'] + ',' + each['visibility']
+        csl = each['name'] +  ',' + each['html_url'] + ',' + each['updated_at'] + ',' + each['visibility'] + '\n'
         file.write(csl)
 
 
